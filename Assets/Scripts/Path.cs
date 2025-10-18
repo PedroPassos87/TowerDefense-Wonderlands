@@ -5,6 +5,13 @@ public class Path : MonoBehaviour
 {
     public GameObject[] Waypoints;
 
+    public Vector3 GetPosition(int index)
+    {
+
+        return Waypoints[index].transform.position;
+
+    }
+
     private void OnDrawGizmos()
     {
         if (Waypoints.Length> 0)
