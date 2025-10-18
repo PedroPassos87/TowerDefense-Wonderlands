@@ -27,8 +27,15 @@ public class Enemy : MonoBehaviour
 
         if(relativeDistance < 0.1f)
         {
-            _currentWaypoint++;
-            _targetPosition = currentPath.GetPosition(_currentWaypoint);
+            if(_currentWaypoint < currentPath.Waypoints.Length - 1)
+            {
+                _currentWaypoint++;
+                _targetPosition = currentPath.GetPosition(_currentWaypoint);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }
