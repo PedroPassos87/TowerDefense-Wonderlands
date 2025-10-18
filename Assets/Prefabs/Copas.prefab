@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5796877568159092618}
   - component: {fileID: 6662518482574789732}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Copas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,5 +103,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc60c063a4d1204388b8c6c0517aff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  data: {fileID: 11400000, guid: eeabfa50df0b7b7408938c993a0f6cde, type: 2}
   moveSpeed: 3
-  currentPath: {fileID: 0}
