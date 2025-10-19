@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Enemy_Espadas
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   lives: 3
-  damage: 1
-  speed: 3
+  damage: 2
+  speed: 5
