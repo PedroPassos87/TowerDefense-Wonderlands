@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 181472139}
   - component: {fileID: 181472138}
   - component: {fileID: 181472137}
+  - component: {fileID: 181472141}
   m_Layer: 0
   m_Name: ratoTower
   m_TagString: Untagged
@@ -326,12 +327,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.0001
 --- !u!114 &181472138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181472141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181472136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab1e03e8b9133c4688e9dcbd87aa8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  prefab: {fileID: 182882460132441593, guid: a08534946c336b1429250182981ee955, type: 3}
+  poolSize: 5
 --- !u!1 &238099414
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +698,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.024919897, g: 0.074429154, b: 0.1509434, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
