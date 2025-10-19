@@ -1,11 +1,12 @@
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
 
     [Header("Enemy Settings")]
     [SerializeField] private EnemyData data;
-
+    public static event Action<EnemyData> OnEnemyReachedEnd;
     
     [Header("Path Settings")]
     private Path _currentPath;
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                OnEnemyReachedEnd?.Invoke(data);
                 gameObject.SetActive(false);
             }
         }
