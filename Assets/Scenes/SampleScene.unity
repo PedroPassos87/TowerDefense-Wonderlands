@@ -844,7 +844,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680d32988d2127c4b9d2f0c0bbe91285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  pool: {fileID: 1972579680}
+  waves:
+  - {fileID: 11400000, guid: b975b1c7f7e3d7a4e9e02848d834f136, type: 2}
+  - {fileID: 11400000, guid: 90b4c4f686042d64fac26f2d3615799d, type: 2}
+  - {fileID: 11400000, guid: c6181117c3581494688317d8b8e5dfd0, type: 2}
+  copasPool: {fileID: 356345379}
+  espadasPool: {fileID: 1972579680}
+  ourosPool: {fileID: 1752516976}
+  pausPool: {fileID: 2046521957}
 --- !u!1 &2046521956
 GameObject:
   m_ObjectHideFlags: 0

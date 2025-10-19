@@ -3,11 +3,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
+    [Header("Enemy Settings")]
     [SerializeField] private EnemyData data;
-    
-    [SerializeField] private float moveSpeed = 3f;
-    private Path _currentPath;
 
+    
+    [Header("Path Settings")]
+    private Path _currentPath;
     private Vector3 _targetPosition;
     private int _currentWaypoint;
 
